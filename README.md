@@ -26,8 +26,6 @@ collab-coding-groupX/
 │── test_function5.py    # Unit tests for string reversal
 │── README.md            # Project details
 │── CONTRIBUTING.md      # Contribution guidelines
-│── Experience_Report.md # Team experience & insights
-│── Changelog.md         # Record of changes and updates
 
 ## 🛠️ How to Run
 ```bash
