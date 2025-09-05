@@ -17,10 +17,14 @@ def function3():
 def function4():
     # Contributor 4 will implement
     pass
-
+# Author: Contributor 5
+def function5(s: str) -> str:
+    """Returns the string reversed."""
+    return s[::-1]                             
 
 # Driver (Admin will finalize later)
 if __name__ == "__main__":
     print("Math Utilities Project Running...")
     print("Factorial of 5:", function1(5))
+    print("Original: hello   → Reversed:", function5("hello"))
     # Admin will call all contributed functions here
