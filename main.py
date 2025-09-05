@@ -6,9 +6,23 @@ def function1(n: int) -> int:
         raise ValueError("Negative numbers not allowed")
     return 1 if n == 0 else n * function1(n-1)
 
-def function2():
-    # Contributor 2 will implement
-    pass
+#Author: Contributor 2
+def function2(n: int) -> bool:
+    """Return True if n is prime, else False. Works for integers."""
+    if not isinstance(n, int):
+        raise TypeError("n must be an integer")
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0:
+        return False
+    i = 3
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        i += 2
+    return True
 
 def function3():
     # Contributor 3 will implement
@@ -23,4 +37,5 @@ def function4():
 if __name__ == "__main__":
     print("Math Utilities Project Running...")
     print("Factorial of 5:", function1(5))
+    print("Is 7 prime?:", function2(7))  
     # Admin will call all contributed functions here
