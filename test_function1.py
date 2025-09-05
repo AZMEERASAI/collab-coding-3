@@ -14,7 +14,7 @@ class TestFunction1(unittest.TestCase):
 
     def test_factorial_non_integer(self):
         with self.assertRaises(TypeError):
-            function1(3)
+            function1(3.5)
 
 if __name__ == "__main__":
     unittest.main()
