@@ -39,7 +39,7 @@ def function4(a: int, b: int) -> int:
     """Returns GCD of two numbers."""
     while b:
         a, b = b, a % b
-    return a
+    return abs(a)
 
 
 # Driver (Admin will finalize later)
