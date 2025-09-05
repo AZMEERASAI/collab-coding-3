@@ -23,7 +23,7 @@ def function2(n: int) -> bool:
             return False
         i += 2
     return True
-
+#Author :Contributor 3
 def function3(n: int) -> int:
     """Return the nth Fibonacci number (1-indexed). n must be >= 1."""
     if not isinstance(n, int):
