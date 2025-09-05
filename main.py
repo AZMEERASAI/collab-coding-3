@@ -51,6 +51,6 @@ if __name__ == "__main__":
     print("Factorial of 5:", function1(5))
     print("Is 7 prime?:", function2(7))  
     print("10th Fibonacci number:", function3(10))
-    print("GCD of 48 and 18:", function4(48, 18))=
+    print("GCD of 48 and 18:", function4(48, 18))
     print("Original: hello   → Reversed:", function5("hello"))
     # Admin will call all contributed functions here
