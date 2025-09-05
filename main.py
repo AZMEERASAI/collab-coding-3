@@ -24,9 +24,16 @@ def function2(n: int) -> bool:
         i += 2
     return True
 
-def function3():
-    # Contributor 3 will implement
-    pass
+def function3(n: int) -> int:
+    """Return the nth Fibonacci number (1-indexed). n must be >= 1."""
+    if not isinstance(n, int):
+        raise TypeError("n must be an integer")
+    if n <= 0:
+        raise ValueError("n must be positive")
+    a, b = 1, 1
+    for _ in range(n-2):
+        a, b = b, a + b
+    return b if n > 1 else 1
 
 def function4():
     # Contributor 4 will implement
@@ -37,5 +44,9 @@ def function4():
 if __name__ == "__main__":
     print("Math Utilities Project Running...")
     print("Factorial of 5:", function1(5))
+<<<<<<< HEAD
     print("Is 7 prime?:", function2(7))  
+=======
+    print("10th Fibonacci number:", function3(10))
+>>>>>>> origin/feature-branch3
     # Admin will call all contributed functions here
