@@ -33,6 +33,4 @@ collab-coding-groupX/
 ```bash
 # Run the project
 python main.py
-
-# Run all tests
-python -m unittest discover
+python run_all_test_files.py
