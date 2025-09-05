@@ -1,7 +1,10 @@
 
 # Author: Contributor 1
+# Author: Contributor 1
 def function1(n: int) -> int:
-    """Returns factorial of n."""
+    """Return n! for integer n >= 0. Raise ValueError for negative; TypeError for non-int."""
+    if not isinstance(n, int):
+        raise TypeError("n must be an integer")
     if n < 0:
         raise ValueError("Negative numbers not allowed")
     return 1 if n == 0 else n * function1(n-1)
