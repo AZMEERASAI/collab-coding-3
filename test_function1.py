@@ -8,5 +8,5 @@ class TestFunction1(unittest.TestCase):
         with self.assertRaises(ValueError):
             function1(-1)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     unittest.main()
